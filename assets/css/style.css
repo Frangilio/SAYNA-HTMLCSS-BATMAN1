@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Space Grotesk');
 
 @font-face {
     font-family: 'rajdhani';
@@ -108,13 +109,20 @@ nav ul a:hover{
 .btn{
     text-decoration: none;
     color: var(--white-color);
+    font-family: 'rajdhani';
     font-size: 22px;
-    padding: 3px 20px;
+    padding: 15px 20px;
     margin-top: 10px;
+    line-height: 5;
     background: linear-gradient(
         80deg, var(--gradient-white), var(--gradient-red)
     );
     box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+.cta a:hover{
+    background-size: 100%;
+    background-color: white;
 }
 
 #hero .titre{
@@ -220,12 +228,14 @@ nav ul a:hover{
 #contact h2{
     text-align: center;
     font-size: 32px;
+    font-family: 'rajdhani';
     margin-bottom: 32px;
 }
 
 #contact .titre{
+    font-family: 'Space-Grotesk';
     display: block;
-    margin: 28px 0;
+    margin: 40px 0;
 }
 
 #contact .form input[type='email']{
@@ -239,6 +249,10 @@ nav ul a:hover{
     padding: 10px 0;
 }
 
+.contact-texte{
+    display: inline;
+}
+
 #contact .news{
     margin-top: 15px 0;
     border-bottom: 2px solid rgba(120, 120, 120);
@@ -250,22 +264,22 @@ nav ul a:hover{
 }
 
 ::-webkit-input-placeholder{
-    color: #F8F184;
+    color: rgb(202, 198, 198);
     font-size: 15px;
 }
 
 ::-moz-placeholder{
-    color: #F8F184;
+    color: rgba(120, 120, 120);
     font-size: 15px;
 }
 
 ::-ms-input-placeholder{
-    color: #F8F184;
+    color: rgba(120, 120, 120);
     font-size: 15px;
 }
 
 ::placeholder{
-    color: #F8F184;
+    color: rgba(120, 120, 120);
     font-size: 15px;
 }
 
@@ -314,7 +328,7 @@ input[type='submit']{
 #citations .citation-auteur{
     padding-top: 30px;
     font-size: 15px;
-    font-family: 'radjani';
+    font-family: 'rajdhani';
 }
 
 #citations .guillemet-close{
