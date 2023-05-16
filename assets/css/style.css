@@ -45,6 +45,14 @@ body{
     opacity: 0.4; 
 }
 
+.up-bar{
+    border-top: #727272 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
 /* Design de la navigation */
 
 nav{
@@ -67,6 +75,12 @@ nav ul a{
 } 
 
 nav ul a:hover{
+    color: var(--yellow-color);
+}
+
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+    filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
     color: var(--yellow-color);
 }
 
@@ -157,6 +171,16 @@ nav ul a:hover{
 
 /* Design de la partie multimedia */
 
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+}
+
+#multimedia .right{
+    right: -85%;
+}
+
 #multimedia .slider-multimedia{
     display: flex;
     width: 60%;
@@ -170,8 +194,149 @@ nav ul a:hover{
 #multimedia .slider-content{
     padding: 15px;
     background-color: #727272;
+    border-radius: 0 20px 20px 0;
 }
 
 #multimedia p{
     font-size: 14px;
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+/* Design de la partie Contact - Formulaire */
+
+#contact{
+    background-color: darkslategray;
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email']{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgba(120, 120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .news{
+    margin-top: 15px 0;
+    border-bottom: 2px solid rgba(120, 120, 120);
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::-webkit-input-placeholder{
+    color: #F8F184;
+    font-size: 15px;
+}
+
+::-moz-placeholder{
+    color: #F8F184;
+    font-size: 15px;
+}
+
+::-ms-input-placeholder{
+    color: #F8F184;
+    font-size: 15px;
+}
+
+::placeholder{
+    color: #F8F184;
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+
+.btn-group label{
+   cursor: pointer;
+   border: 2px solid; 
+   border-color: #19587D;
+   padding: 10px;
+   -o-border-image: linear-gradient(
+    69deg, red, blue) 1;
+   border-image: linear-gradient(
+    69deg, red, blue
+   ) 1;
+
+   font-size: 20px;
+}
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+}
+
+/* Design de la citation */
+
+#citations{
+    margin: 90px;
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: 'radjani';
+}
+
+#citations .guillemet-close{
+    float: right;
+}
+
+/* Design du footer */
+
+footer{
+    margin-top: 162px;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item{
+    padding: 20px;
 }
