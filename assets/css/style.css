@@ -233,9 +233,11 @@ nav ul a:hover{
 }
 
 #contact .titre{
-    font-family: 'Space-Grotesk';
+    color: #FFF;
+    font-family: 'rajdhani';
+    font-size: 20px;
     display: block;
-    margin: 40px 0;
+    margin: 28px 0;
 }
 
 #contact .form input[type='email']{
@@ -251,10 +253,15 @@ nav ul a:hover{
 
 .contact-texte{
     display: inline;
+    margin-top: 25px;
+}
+
+.option{
+    width: 100%;
 }
 
 #contact .news{
-    margin-top: 15px 0;
+    margin-top: 25px;
     border-bottom: 2px solid rgba(120, 120, 120);
 }
 
@@ -279,7 +286,7 @@ nav ul a:hover{
 }
 
 ::placeholder{
-    color: rgba(120, 120, 120);
+    color: rgb(230, 226, 226);
     font-size: 15px;
 }
 
@@ -299,18 +306,41 @@ nav ul a:hover{
    border-color: #19587D;
    padding: 10px;
    -o-border-image: linear-gradient(
-    69deg, red, blue) 1;
+    69deg, white, rgb(0, 98, 255)) 1;
    border-image: linear-gradient(
-    69deg, red, blue
+    69deg, white, rgb(0, 98, 255)
    ) 1;
 
    font-size: 20px;
 }
 
+#commentaire{
+    color: rgb(213, 208, 208);
+    font-size: 15px;
+    
+}
+
+textarea{
+    height: 20px;
+    width: 100%;
+    padding-left: 3px;
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(120, 120, 120);
+}
+
 input[type='submit']{
+    color: white;
     display: block;
+    font-size: 25px;
+    font-family: 'rajdhani';
     width: 230px;
     margin: 25px auto;
+    padding: 10px;
+    background: linear-gradient(
+        80deg, white, red
+    );
 }
 
 /* Design de la citation */
