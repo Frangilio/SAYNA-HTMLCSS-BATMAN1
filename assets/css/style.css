@@ -43,7 +43,6 @@ body{
     color: white;
     font-family: 'Space-Grotesk';
     font-weight: 300;
-    opacity: 0.4; 
 }
 
 .up-bar{
@@ -90,7 +89,7 @@ nav ul a:hover{
 #hero {
     background-image:url(../Illustrations/Bathome1.png);
     background-size: cover;
-    height: 600px;
+    height: 1000px;
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #19587D;
@@ -148,6 +147,12 @@ nav ul a:hover{
 .scroll .social{
     margin-top: 15px;
 }
+
+.scroll a:hover{
+    -webkit-filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+    filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+    color: var(--yellow-color);
+} 
 
 /* Design de la section batman personnage */
 
@@ -341,6 +346,14 @@ input[type='submit']{
     background: linear-gradient(
         80deg, white, red
     );
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+.btn-confirme:hover{
+    background: linear-gradient(
+        80deg, red, white
+    );
+    box-shadow: var(--black-color) 5px 5px 60px;
 }
 
 /* Design de la citation */
